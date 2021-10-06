@@ -1,0 +1,10 @@
+/home/atef/camunda/src/test/java/com/noodles/workflow/delegates/LetUsCookTest.java
+/home/atef/camunda/src/test/java/com/noodles/workflow/delegates/CheckIngredientsTest.java
+/home/atef/camunda/src/test/java/com/noodles/MasalaNoodlesApplicationTest.java
+/home/atef/camunda/src/test/java/com/noodles/workflow/delegates/OrderOnlineTest.java
+/home/atef/camunda/src/test/java/com/noodles/controller/NoodlesControllerTest.java
+/home/atef/camunda/src/test/java/com/noodles/util/ConstantsTest.java
+/home/atef/camunda/src/test/java/com/noodles/workflow/delegates/LetUsEatTest.java
+/home/atef/camunda/src/test/java/com/noodles/NoodlesFlowTest.java
+/home/atef/camunda/src/test/java/com/noodles/ProcessFlowTest.java
+/home/atef/camunda/src/test/java/com/noodles/util/WorkflowLoggerTest.java

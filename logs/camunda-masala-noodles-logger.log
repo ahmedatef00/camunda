@@ -1,0 +1,862 @@
+2021-10-06 01:40:18,623 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 01:40:18,638 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 8483 (/home/atef/camunda-masala-noodles/target/classes started by atef in /home/atef/camunda-masala-noodles)
+2021-10-06 01:40:18,640 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 01:40:18,641 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 01:40:22,769 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 01:40:22,825 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 38 ms. Found 0 JPA repository interfaces.
+2021-10-06 01:40:26,286 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 01:40:26,298 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 01:40:26,299 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 01:40:26,299 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 01:40:26,893 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 01:40:26,894 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7516 ms
+2021-10-06 01:40:27,010 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 01:40:27,160 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 01:40:27,741 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 01:40:29,214 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 01:40:29,221 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 01:40:29,541 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 01:40:29,599 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 01:40:29,824 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 01:40:29,935 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 01:40:30,329 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 01:40:30,366 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 01:40:30,463 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 01:40:30,466 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 01:40:30,670 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 01:40:32,386 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 01:40:32,386 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 01:40:32,387 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 01:40:32,387 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 01:40:32,387 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda-masala-noodles/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 01:40:32,391 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 01:40:32,391 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 01:40:32,391 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 01:40:32,394 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 01:40:32,397 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 01:40:32,470 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 01:40:32,731 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 01:40:32,731 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 01:40:35,221 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 01:40:35,447 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@5065bdac, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@2e9dcdd3)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@247dcbba, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 01:40:44,009 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 01:40:44,011 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 01:40:44,472 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 01:40:44,537 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 01:40:44,557 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 01:40:44,581 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 01:40:44,588 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 01:40:44,595 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 01:40:44,611 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 01:40:44,655 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 01:40:44,655 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 01:40:44,730 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 01:40:44,958 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 01:40:45,322 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-06 01:40:46,242 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@2fd1ad8a
+2021-10-06 01:40:46,411 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@21edd891
+2021-10-06 01:40:46,651 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-10101"]
+2021-10-06 01:40:46,677 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 10101 (http) with context path '/camunda-masala-noodles'
+2021-10-06 01:40:46,694 INFO com.noodles.MasalaNoodlesApplication [main] Started MasalaNoodlesApplication in 29.419 seconds (JVM running for 31.014)
+2021-10-06 01:40:46,697 INFO org.camunda.bpm.engine.jobexecutor [main] ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2021-10-06 01:40:46,699 INFO org.camunda.bpm.engine.jobexecutor [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2021-10-06 01:42:36,186 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [http-nio-10101-exec-4] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-06 01:42:36,186 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-10101-exec-4] Initializing Servlet 'dispatcherServlet'
+2021-10-06 01:42:36,189 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-10101-exec-4] Completed initialization in 3 ms
+2021-10-06 01:43:20,716 INFO com.noodles.workflow.delegates.CheckIngredients [http-nio-10101-exec-10] Timestamp:1633477400716:workflow-service-info:Check Ingredients:Check ingredients to make veg masala noodles
+2021-10-06 01:43:20,716 ERROR com.noodles.workflow.delegates.CheckIngredients [http-nio-10101-exec-10] Timestamp:1633477400716:workflow-service-error:Check Ingredients:we cannot make veg masala noodles as required ingredient is missing. Instant Noodles, Water, Pan and Spatula are required.
+2021-10-06 01:43:20,719 INFO com.noodles.workflow.delegates.OrderOnline [http-nio-10101-exec-10] Timestamp:1633477400719:workflow-service-info:Order Online:Veg masala noodles was no success.. Let's order online...
+2021-10-06 01:43:20,720 INFO com.noodles.workflow.delegates.OrderOnline [http-nio-10101-exec-10] Timestamp:1633477400720:workflow-service-info:Order Online:Ordering is not part of this flow yet... Try your local apps...
+2021-10-06 02:15:12,525 ERROR org.camunda.bpm.engine.context [SpringContextShutdownHook] ENGINE-16004 Exception while closing command context: An exception occurred in the persistence layer. Please check the server logs for a detailed message and the entire exception stack trace.
+org.camunda.bpm.engine.ProcessEngineException: An exception occurred in the persistence layer. Please check the server logs for a detailed message and the entire exception stack trace.
+	at org.camunda.bpm.engine.impl.util.ExceptionUtil.wrapPersistenceException(ExceptionUtil.java:263)
+	at org.camunda.bpm.engine.impl.util.ExceptionUtil.doWithExceptionWrapper(ExceptionUtil.java:257)
+	at org.camunda.bpm.engine.impl.db.sql.DbSqlSession.selectById(DbSqlSession.java:120)
+	at org.camunda.bpm.engine.impl.db.entitymanager.DbEntityManager.selectById(DbEntityManager.java:211)
+	at org.camunda.bpm.engine.impl.persistence.entity.PropertyManager.findPropertyById(PropertyManager.java:29)
+	at org.camunda.bpm.engine.impl.cmd.IsTelemetryEnabledCmd.execute(IsTelemetryEnabledCmd.java:35)
+	at org.camunda.bpm.engine.impl.cmd.IsTelemetryEnabledCmd.execute(IsTelemetryEnabledCmd.java:26)
+	at org.camunda.bpm.engine.impl.interceptor.CommandExecutorImpl.execute(CommandExecutorImpl.java:28)
+	at org.camunda.bpm.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:110)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor$1.doInTransaction(SpringTransactionInterceptor.java:72)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.camunda.bpm.engine.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.ProcessApplicationContextInterceptor.execute(ProcessApplicationContextInterceptor.java:70)
+	at org.camunda.bpm.engine.impl.interceptor.CommandCounterInterceptor.execute(CommandCounterInterceptor.java:35)
+	at org.camunda.bpm.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:33)
+	at org.camunda.bpm.engine.impl.telemetry.reporter.TelemetrySendingTask.isTelemetryEnabled(TelemetrySendingTask.java:194)
+	at org.camunda.bpm.engine.impl.telemetry.reporter.TelemetrySendingTask.run(TelemetrySendingTask.java:114)
+	at org.camunda.bpm.engine.impl.telemetry.reporter.TelemetryReporter.reportNow(TelemetryReporter.java:137)
+	at org.camunda.bpm.engine.impl.telemetry.reporter.TelemetryReporter.stop(TelemetryReporter.java:130)
+	at org.camunda.bpm.engine.impl.telemetry.reporter.TelemetryReporter.stop(TelemetryReporter.java:117)
+	at org.camunda.bpm.engine.impl.ProcessEngineImpl.close(ProcessEngineImpl.java:177)
+	at org.camunda.bpm.engine.spring.ProcessEngineFactoryBean.destroy(ProcessEngineFactoryBean.java:42)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1074)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:171)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:990)
+Caused by: org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACT_GE_PROPERTY" not found; SQL statement:
+select * from ACT_GE_PROPERTY where NAME_ = ? [42102-200]
+### The error may exist in org/camunda/bpm/engine/impl/mapping/entity/Property.xml
+### The error may involve org.camunda.bpm.engine.impl.persistence.entity.PropertyEntity.selectProperty
+### The error occurred while executing a query
+### SQL: select * from ACT_GE_PROPERTY where NAME_ = ?
+### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACT_GE_PROPERTY" not found; SQL statement:
+select * from ACT_GE_PROPERTY where NAME_ = ? [42102-200]
+	at org.apache.ibatis.exceptions.ExceptionFactory.wrapException(ExceptionFactory.java:30)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:149)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at org.camunda.bpm.engine.impl.db.sql.DbSqlSession.lambda$selectById$2(DbSqlSession.java:120)
+	at org.camunda.bpm.engine.impl.util.ExceptionUtil.doWithExceptionWrapper(ExceptionUtil.java:254)
+	... 30 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ACT_GE_PROPERTY" not found; SQL statement:
+select * from ACT_GE_PROPERTY where NAME_ = ? [42102-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.readTableOrView(Parser.java:7628)
+	at org.h2.command.Parser.readTableFilter(Parser.java:1970)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2827)
+	at org.h2.command.Parser.parseSelect(Parser.java:2959)
+	at org.h2.command.Parser.parseQuerySub(Parser.java:2817)
+	at org.h2.command.Parser.parseSelectUnion(Parser.java:2649)
+	at org.h2.command.Parser.parseQuery(Parser.java:2620)
+	at org.h2.command.Parser.parsePrepared(Parser.java:868)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:76)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:352)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at jdk.internal.reflect.GeneratedMethodAccessor44.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy$TransactionAwareInvocationHandler.invoke(TransactionAwareDataSourceProxy.java:238)
+	at jdk.proxy2/jdk.proxy2.$Proxy80.prepareStatement(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.instantiateStatement(PreparedStatementHandler.java:86)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.prepare(BaseStatementHandler.java:88)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.prepare(RoutingStatementHandler.java:59)
+	at org.apache.ibatis.executor.BatchExecutor.doQuery(BatchExecutor.java:90)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	... 34 common frames omitted
+2021-10-06 02:15:12,585 WARN org.springframework.beans.factory.support.DisposableBeanAdapter [SpringContextShutdownHook] Invocation of destroy method failed on bean with name 'processEngineFactoryBean': org.camunda.bpm.engine.ProcessEngineException: An exception occurred in the persistence layer. Please check the server logs for a detailed message and the entire exception stack trace.
+2021-10-06 02:15:12,607 INFO org.camunda.bpm.engine.jobexecutor [SpringContextShutdownHook] ENGINE-14015 Shutting down the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]
+2021-10-06 02:15:12,607 INFO org.camunda.bpm.engine.jobexecutor [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] ENGINE-14020 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] stopped job acquisition
+2021-10-06 02:15:12,607 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:15:12,608 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:15:12,608 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringContextShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:15:12,634 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:15:12,636 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-10-06 02:15:29,255 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 10104 (/home/atef/camunda-masala-noodles/target/classes started by atef in /home/atef/camunda-masala-noodles)
+2021-10-06 02:15:29,253 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:15:29,259 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:15:29,260 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:15:32,533 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:15:32,642 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2021-10-06 02:15:33,585 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:15:33,594 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:15:33,595 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:15:33,595 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:15:33,731 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:15:33,731 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4214 ms
+2021-10-06 02:15:33,843 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:15:33,937 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:15:34,360 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:15:34,542 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:15:34,549 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:15:34,986 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:15:35,101 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:15:35,358 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:15:35,507 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:15:36,699 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:15:36,707 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:15:36,813 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:15:36,815 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:15:37,042 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:15:38,679 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:15:38,679 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:15:38,680 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:15:38,680 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:15:38,680 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda-masala-noodles/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:15:38,747 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:15:38,748 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:15:38,749 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:15:38,756 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:15:38,786 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:15:39,001 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:15:39,007 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:15:39,007 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:15:39,434 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:15:39,502 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@3d42b756, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@7c93e69)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@6f6c6c70, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:15:46,367 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:15:46,389 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:15:46,768 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:15:46,858 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:15:46,873 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:15:46,891 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:15:46,898 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:15:46,903 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:15:46,915 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:15:46,940 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:15:46,941 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:15:47,028 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:15:47,195 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:15:48,821 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda-masala-noodles/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepo' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+2021-10-06 02:15:48,876 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2021-10-06 02:15:48,887 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2021-10-06 02:15:48,896 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2021-10-06 02:15:48,930 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2021-10-06 02:15:48,932 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2021-10-06 02:15:48,952 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2021-10-06 02:15:48,955 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2021-10-06 02:15:48,956 INFO org.camunda.bpm.engine [main] ENGINE-00007 Process Engine default closed
+2021-10-06 02:15:48,957 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:15:48,957 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:15:48,957 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:15:48,962 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:15:48,966 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-10-06 02:15:48,968 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-10-06 02:15:48,987 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-06 02:15:49,054 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda-masala-noodles/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepo' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.noodles.MasalaNoodlesApplication.main(MasalaNoodlesApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepo' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:229)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:179)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:162)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:281)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 31 common frames omitted
+2021-10-06 02:22:23,775 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 10596 (/home/atef/camunda-masala-noodles/target/classes started by atef in /home/atef/camunda-masala-noodles)
+2021-10-06 02:22:23,778 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:22:23,790 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:22:23,792 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:22:25,084 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:22:25,139 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+2021-10-06 02:22:25,655 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:22:25,663 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:22:25,663 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:22:25,664 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:22:25,809 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:22:25,809 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1888 ms
+2021-10-06 02:22:25,833 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:22:25,854 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:22:26,061 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:22:26,156 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:22:26,163 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:22:26,324 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:22:26,366 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:22:26,463 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:22:26,552 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:22:27,036 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:22:27,045 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:22:27,115 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:22:27,127 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:22:27,201 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:22:29,242 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:22:29,243 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:22:29,244 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:22:29,244 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:22:29,244 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda-masala-noodles/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:22:29,247 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:22:29,248 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:22:29,248 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:22:29,251 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:22:29,255 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:22:29,354 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:22:29,359 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:22:29,359 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:22:29,491 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:22:29,543 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@61c3d7ac, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@4bc9389)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@75312c94, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:22:37,168 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:22:37,170 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:22:37,449 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:22:37,517 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:22:37,534 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:22:37,552 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:22:37,557 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:22:37,562 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:22:37,574 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:22:37,595 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:22:37,595 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:22:37,644 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:22:37,817 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:22:38,113 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda-masala-noodles/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+2021-10-06 02:22:38,124 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2021-10-06 02:22:38,138 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2021-10-06 02:22:38,150 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2021-10-06 02:22:38,193 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2021-10-06 02:22:38,196 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2021-10-06 02:22:38,214 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2021-10-06 02:22:38,218 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2021-10-06 02:22:38,220 INFO org.camunda.bpm.engine [main] ENGINE-00007 Process Engine default closed
+2021-10-06 02:22:38,220 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:22:38,221 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:22:38,221 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:22:38,225 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:22:38,228 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-10-06 02:22:38,230 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-10-06 02:22:38,247 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-06 02:22:38,271 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda-masala-noodles/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.noodles.MasalaNoodlesApplication.main(MasalaNoodlesApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:229)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:179)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:162)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:281)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 31 common frames omitted
+2021-10-06 02:32:15,192 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:32:15,268 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 11.0.11 on atef with PID 11651 (/home/atef/camunda/target/classes started by atef in /home/atef/camunda)
+2021-10-06 02:32:15,270 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:32:15,271 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:32:16,534 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:32:16,654 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interfaces.
+2021-10-06 02:32:17,595 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:32:17,628 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:32:17,629 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:32:17,629 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:32:17,853 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:32:17,854 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2424 ms
+2021-10-06 02:32:17,892 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:32:17,936 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:32:18,219 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:32:18,475 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:32:18,481 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:32:19,042 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:32:19,133 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:32:19,277 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:32:20,152 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:32:20,838 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:32:20,849 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:32:20,925 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:32:20,928 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:32:21,062 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:32:23,155 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:32:23,155 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:32:23,155 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:32:23,156 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:32:23,156 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:32:23,159 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:32:23,159 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:32:23,159 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:32:23,162 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:32:23,169 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:32:23,289 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:32:23,330 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:32:23,330 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:32:23,704 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:32:23,759 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@5e663ab, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@4b74a67a)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@19b3d3a4, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:32:32,451 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:32:32,454 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:32:33,077 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:32:33,169 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:32:33,186 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:32:33,209 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:32:33,214 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:32:33,219 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:32:33,229 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:32:33,255 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:32:33,255 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:32:33,343 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:32:33,651 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:32:34,686 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+2021-10-06 02:32:34,746 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2021-10-06 02:32:34,754 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2021-10-06 02:32:34,760 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2021-10-06 02:32:34,788 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2021-10-06 02:32:34,791 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2021-10-06 02:32:34,810 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2021-10-06 02:32:34,813 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2021-10-06 02:32:34,828 INFO org.camunda.bpm.engine [main] ENGINE-00007 Process Engine default closed
+2021-10-06 02:32:34,828 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:32:34,828 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:32:34,829 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:32:34,834 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:32:34,840 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-10-06 02:32:34,842 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-10-06 02:32:34,889 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-06 02:32:35,112 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.noodles.MasalaNoodlesApplication.main(MasalaNoodlesApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:229)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:179)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:162)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:281)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 31 common frames omitted
+2021-10-06 02:34:34,241 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:34:34,252 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 12022 (/home/atef/camunda/target/classes started by atef in /home/atef/camunda)
+2021-10-06 02:34:34,254 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:34:34,255 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:34:35,714 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:34:35,854 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interfaces.
+2021-10-06 02:34:36,695 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:34:36,704 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:34:36,705 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:34:36,705 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:34:36,942 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:34:36,943 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2620 ms
+2021-10-06 02:34:36,973 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:34:36,997 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:34:37,239 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:34:37,391 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:34:37,398 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:34:37,596 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:34:37,641 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:34:37,748 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:34:37,847 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:34:38,406 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:34:38,418 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:34:38,520 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:34:38,523 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:34:38,631 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:34:40,383 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:34:40,384 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:34:40,384 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:34:40,385 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:34:40,385 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:34:40,387 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:34:40,388 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:34:40,388 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:34:40,391 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:34:40,395 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:34:40,499 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:34:40,571 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:34:40,577 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:34:40,861 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:34:40,904 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@78c23ade, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@7ac1161f)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@49f9758, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:34:50,295 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:34:50,297 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:34:50,525 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:34:50,583 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:34:50,598 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:34:50,633 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:34:50,641 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:34:50,649 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:34:50,669 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:34:50,694 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:34:50,695 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:34:50,767 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:34:50,929 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:34:51,386 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+2021-10-06 02:34:51,398 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2021-10-06 02:34:51,411 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2021-10-06 02:34:51,422 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2021-10-06 02:34:51,466 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2021-10-06 02:34:51,469 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2021-10-06 02:34:51,496 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2021-10-06 02:34:51,500 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2021-10-06 02:34:51,502 INFO org.camunda.bpm.engine [main] ENGINE-00007 Process Engine default closed
+2021-10-06 02:34:51,503 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:34:51,503 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:34:51,504 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:34:51,509 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:34:51,512 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-10-06 02:34:51,514 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-10-06 02:34:51,532 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-06 02:34:51,551 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'OrderOnline' defined in file [/home/atef/camunda/target/classes/com/noodles/workflow/delegates/OrderOnline.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1354)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1204)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.noodles.MasalaNoodlesApplication.main(MasalaNoodlesApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:229)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:179)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:162)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:281)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 31 common frames omitted
+2021-10-06 02:39:05,209 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:39:06,721 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 12541 (/home/atef/camunda/target/classes started by atef in /home/atef/camunda)
+2021-10-06 02:39:06,722 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:39:06,723 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:39:30,287 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:39:30,832 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 441 ms. Found 1 JPA repository interfaces.
+2021-10-06 02:39:37,467 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:39:37,537 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:39:37,538 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:39:37,539 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:39:38,503 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:39:38,504 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 29979 ms
+2021-10-06 02:39:38,983 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:39:39,430 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:39:41,928 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:39:43,582 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:39:43,593 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:39:45,612 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:39:48,320 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:39:52,471 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:39:55,444 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:40:01,152 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:40:01,182 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:40:01,368 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:40:01,374 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:40:01,621 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:40:03,704 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:40:03,705 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:40:03,706 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:40:03,707 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:40:03,707 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:40:04,140 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:40:04,140 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:40:04,140 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:40:04,144 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:40:04,582 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:40:13,280 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:40:13,539 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:40:13,540 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:40:16,293 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:40:17,219 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@578c99ac, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@6ca30886)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@13cae908, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:40:28,629 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:40:28,631 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:40:29,095 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:40:29,146 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:40:29,161 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:40:29,179 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:40:29,186 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:40:29,193 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:40:29,228 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:40:29,253 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:40:29,253 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:40:29,365 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:40:29,556 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:40:29,907 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-06 02:40:31,430 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@34a20f16
+2021-10-06 02:40:31,431 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@2e6d76ba
+2021-10-06 02:40:31,845 WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+2021-10-06 02:40:31,899 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.engine.sql'
+2021-10-06 02:40:31,911 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.decision.history.sql'
+2021-10-06 02:40:31,921 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.engine.sql'
+2021-10-06 02:40:31,959 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'engine' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.engine.sql'
+2021-10-06 02:40:31,963 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'case.history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.case.history.sql'
+2021-10-06 02:40:31,994 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'history' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.history.sql'
+2021-10-06 02:40:31,999 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'drop' on component 'identity' with resource 'org/camunda/bpm/engine/db/drop/activiti.h2.drop.identity.sql'
+2021-10-06 02:40:32,001 INFO org.camunda.bpm.engine [main] ENGINE-00007 Process Engine default closed
+2021-10-06 02:40:32,003 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Shutting down ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:40:32,004 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:40:32,004 INFO org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [main] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-10-06 02:40:32,011 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2021-10-06 02:40:32,016 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2021-10-06 02:40:32,019 INFO org.apache.catalina.core.StandardService [main] Stopping service [Tomcat]
+2021-10-06 02:40:32,052 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-10-06 02:40:32,112 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderRepository' defined in com.noodles.OrderRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:925)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:917)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:582)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.noodles.MasalaNoodlesApplication.main(MasalaNoodlesApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class java.lang.Long
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:75)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:229)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:179)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:162)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:281)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1845)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1782)
+	... 17 common frames omitted
+2021-10-06 02:42:54,785 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-10-06 02:42:54,829 INFO com.noodles.MasalaNoodlesApplication [main] Starting MasalaNoodlesApplication using Java 16.0.1 on atef with PID 13250 (/home/atef/camunda/target/classes started by atef in /home/atef/camunda)
+2021-10-06 02:42:54,830 DEBUG com.noodles.MasalaNoodlesApplication [main] Running with Spring Boot v2.4.3, Spring v5.3.4
+2021-10-06 02:42:54,833 INFO com.noodles.MasalaNoodlesApplication [main] No active profile set, falling back to default profiles: default
+2021-10-06 02:42:56,480 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-06 02:42:56,501 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-10-06 02:42:57,114 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 10101 (http)
+2021-10-06 02:42:57,123 INFO org.apache.coyote.http11.Http11NioProtocol [main] Initializing ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:42:57,124 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2021-10-06 02:42:57,125 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/9.0.43]
+2021-10-06 02:42:57,350 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [main] Initializing Spring embedded WebApplicationContext
+2021-10-06 02:42:57,351 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2354 ms
+2021-10-06 02:42:57,377 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Configuring camunda rest api.
+2021-10-06 02:42:57,431 INFO org.camunda.bpm.spring.boot.starter.rest.CamundaJerseyResourceConfig [main] Finished configuring camunda rest api.
+2021-10-06 02:42:57,673 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-10-06 02:42:57,845 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-10-06 02:42:57,854 INFO org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:camunda-h2-database'
+2021-10-06 02:42:58,102 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-10-06 02:42:58,170 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.28.Final
+2021-10-06 02:42:58,329 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-10-06 02:42:58,463 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-10-06 02:42:59,188 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-10-06 02:42:59,201 INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-06 02:42:59,338 INFO org.camunda.bpm.spring.boot [main] STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2021-10-06 02:42:59,342 INFO org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'camundaTaskExecutor'
+2021-10-06 02:42:59,487 INFO org.camunda.bpm.engine.cfg [main] ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJpaConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, SpringBootSpinProcessEnginePlugin]' activated on process engine 'default'
+2021-10-06 02:43:01,338 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-dmn/7.15.0/camunda-engine-dmn-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:43:01,339 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-api/7.15.0/camunda-engine-feel-api-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:43:01,339 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-juel/7.15.0/camunda-engine-feel-juel-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:43:01,340 WARN org.camunda.bpm.spring.boot.starter.configuration.impl.DefaultDeploymentConfiguration [main] unable to determine if resource URL [jar:file:/home/atef/.m2/repository/org/camunda/bpm/dmn/camunda-engine-feel-scala/7.15.0/camunda-engine-feel-scala-7.15.0.jar!/META-INF/maven/org.camunda.bpm.dmn/] is a deployable resource
+2021-10-06 02:43:01,340 INFO org.camunda.bpm.spring.boot [main] STARTER-SB021 Auto-Deploying resources: [file [/home/atef/camunda/target/classes/cook_noodles_process.bpmn]]
+2021-10-06 02:43:01,342 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2021-10-06 02:43:01,343 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-003: Task events will be published as Spring Events.
+2021-10-06 02:43:01,343 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-005: Execution events will be published as Spring Events.
+2021-10-06 02:43:01,346 INFO org.camunda.bpm.spring.boot.starter.event.EventPublisherPlugin [main] EVENTING-007: History events will be published as Spring events.
+2021-10-06 02:43:01,352 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormatProvider[name = application/json]
+2021-10-06 02:43:01,575 INFO org.camunda.spin [main] SPIN-01010 Discovered Spin data format provider: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormatProvider[name = application/xml]
+2021-10-06 02:43:01,582 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.xml.dom.format.DomXmlDataFormat[name = application/xml]
+2021-10-06 02:43:01,583 INFO org.camunda.spin [main] SPIN-01009 Discovered Spin data format: org.camunda.spin.impl.json.jackson.format.JacksonJsonDataFormat[name = application/json]
+2021-10-06 02:43:01,726 INFO org.camunda.bpm.dmn.feel.scala [main] FEEL/SCALA-01001 Spin value mapper detected
+2021-10-06 02:43:01,786 INFO org.camunda.feel.FeelEngine [main] Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@304e1e4e, org.camunda.spin.plugin.impl.feel.integration.SpinValueMapper@7d4e424e)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@24536f07, clock: SystemClock, configuration: Configuration(false)]
+2021-10-06 02:43:08,585 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2021-10-06 02:43:08,587 INFO org.camunda.bpm.connect [main] CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2021-10-06 02:43:08,828 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2021-10-06 02:43:08,930 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2021-10-06 02:43:08,948 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2021-10-06 02:43:08,972 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2021-10-06 02:43:08,978 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2021-10-06 02:43:08,984 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2021-10-06 02:43:08,997 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2021-10-06 02:43:09,025 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03067 No history level property found in database
+2021-10-06 02:43:09,026 INFO org.camunda.bpm.engine.persistence [main] ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2021-10-06 02:43:09,113 INFO org.camunda.bpm.engine [main] ENGINE-00001 Process Engine default created.
+2021-10-06 02:43:09,278 INFO org.camunda.bpm.spring.boot [main] STARTER-SB010 creating initial Admin User: AdminUserProperty[id=noodles, firstName=Noodles, lastName=Noodles, email=noodles@localhost, password=******]
+2021-10-06 02:43:09,474 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-06 02:43:10,624 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazySecurityFilter@4d518c66
+2021-10-06 02:43:10,626 INFO org.camunda.bpm.spring.boot.starter.webapp.filter.LazyInitRegistration [main] lazy initialized org.camunda.bpm.spring.boot.starter.webapp.filter.LazyProcessEnginesFilter@7971c2a9
+2021-10-06 02:43:10,880 INFO org.apache.coyote.http11.Http11NioProtocol [main] Starting ProtocolHandler ["http-nio-10101"]
+2021-10-06 02:43:10,936 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 10101 (http) with context path '/camunda-masala-noodles'
+2021-10-06 02:43:10,966 INFO com.noodles.MasalaNoodlesApplication [main] Started MasalaNoodlesApplication in 17.081 seconds (JVM running for 18.161)
+2021-10-06 02:43:10,970 INFO org.camunda.bpm.engine.jobexecutor [main] ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2021-10-06 02:43:10,973 INFO org.camunda.bpm.engine.jobexecutor [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2021-10-06 02:43:13,008 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/camunda-masala-noodles] [http-nio-10101-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-06 02:43:13,008 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-10101-exec-2] Initializing Servlet 'dispatcherServlet'
+2021-10-06 02:43:13,011 INFO org.springframework.web.servlet.DispatcherServlet [http-nio-10101-exec-2] Completed initialization in 3 ms
+2021-10-06 02:43:55,347 INFO com.noodles.workflow.delegates.CheckIngredients [http-nio-10101-exec-4] Timestamp:1633481035347:workflow-service-info:Check Ingredients:Check ingredients to make veg masala noodles
+2021-10-06 02:43:55,348 INFO com.noodles.workflow.delegates.CheckIngredients [http-nio-10101-exec-4] Timestamp:1633481035348:workflow-service-info:Check Ingredients:we can make veg masala noodles
+2021-10-06 02:43:55,351 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035351:workflow-service-info:Prepare Noodles:Follow below to make veg masala noodles
+2021-10-06 02:43:55,352 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035352:workflow-service-info:STEP 1:Take a deep-bottomed pan over medium flame and add water in it and bring it to a boil.
+2021-10-06 02:43:55,352 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035352:workflow-service-info:STEP 2:While the water starts to boil, check if you received IMs on your mobile.
+2021-10-06 02:43:55,352 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035352:workflow-service-info:STEP 3:Once the water boils, add chopped vegetables, add 1 packet of instant noodles and stir it.
+2021-10-06 02:43:55,353 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035353:workflow-service-info:STEP 4:Add the taste-maker to it and give it another stir
+2021-10-06 02:43:55,353 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035353:workflow-service-info:STEP 5:Add grated cheese and close the lid
+2021-10-06 02:43:55,353 INFO com.noodles.workflow.delegates.LetUsCook [http-nio-10101-exec-4] Timestamp:1633481035353:workflow-service-info:Cooking in Process:You can play with your mobile as it cooks for sometime...
+2021-10-06 02:45:26,038 INFO com.noodles.workflow.delegates.OrderOnline [camundaTaskExecutor-1] Timestamp:1633481126038:workflow-service-info:Order Online:Veg masala noodles was no success.. Let's order online...
